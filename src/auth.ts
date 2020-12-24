@@ -1,25 +1,13 @@
 import {
   AuthenticateFn, AuthenticationBindings, AuthenticationMetadata,
-
-
   AuthenticationStrategy, AUTHENTICATION_METADATA_KEY
 } from '@loopback/authentication';
 import {StrategyAdapter} from '@loopback/authentication-passport';
 import {AuthMetadataProvider} from '@loopback/authentication/dist/providers/auth-metadata.provider';
 import {
   BindingKey, Constructor, CoreBindings,
-
-
-
-
   Getter, inject, MethodDecoratorFactory,
-
-
-
-
   Provider,
-
-
   Setter, ValueOrPromise
 } from '@loopback/core';
 import {repository} from '@loopback/repository';
