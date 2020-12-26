@@ -6,7 +6,7 @@ import {StrategyAdapter} from '@loopback/authentication-passport';
 import {AuthMetadataProvider} from '@loopback/authentication/dist/providers/auth-metadata.provider';
 import {
   BindingKey, Constructor, CoreBindings,
-  Getter, inject, MethodDecoratorFactory,
+  Getter, inject, MetadataInspector, MethodDecoratorFactory,
   Provider,
   Setter, ValueOrPromise
 } from '@loopback/core';
@@ -189,7 +189,6 @@ export class MyAuthActionProvider implements Provider<AuthenticateFn> {
     if (!user) return;
 
     //this.setCurrentUser(user);
-    //next();
     //return user;
   }
 }
