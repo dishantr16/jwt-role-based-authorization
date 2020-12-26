@@ -7,7 +7,7 @@ import {JwtRoleBasedApplication} from './application';
 async function exportOpenApiSpec(): Promise<void> {
   const config: ApplicationConfig = {
     rest: {
-      port: +(process.env.PORT ?? 8000),
+      port: +(process.env.PORT ?? 3000),
       host: process.env.HOST ?? 'localhost',
     },
   };

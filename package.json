@@ -26,7 +26,7 @@
     "posttest": "npm run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "docker:build": "docker build -t jwt-role-based .",
-    "docker:run": "docker run -p 8000:8000 -d jwt-role-based",
+    "docker:run": "docker run -p 3000:3000 -d jwt-role-based",
     "premigrate": "npm run build",
     "migrate": "node ./dist/migrate",
     "preopenapi-spec": "npm run build",
